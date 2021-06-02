@@ -4,7 +4,7 @@ import './App.css';
 const BOARD_SIZE = 10;
 const DEFAULT_CELLS_VALUE = Array(BOARD_SIZE).fill(Array(BOARD_SIZE).fill(0))
 const AVAILABLE_MOVES = ['ArrowDown', 'ArrowUp', 'ArrowRight', 'ArrowLeft']
-const SPEED = 580
+const SPEED = 200
 
 const checkAvailableSlot = position => {
   switch (true) {
@@ -110,6 +110,6 @@ const App = () => {
 }
 
 const Cell = ({ type }) => {
-  return <div className={'cell ${type}'} />
+  return <div className={`cell ${type}`} />
 }
 export default App;
